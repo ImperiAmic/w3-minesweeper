@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "public/js",
   "scripts": {
-    "start": "serve start",
+    "start": "serve public",
     "build": "tsc",
     "build:dev": "tsc --watch",
     "test": "node dist/js/analytics/__tests__",
