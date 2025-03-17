@@ -1,0 +1,55 @@
+:root {
+  --main-color: #ffcfba;
+  --main-color-blue: #baf0ff;
+  --main-color-pink: #e5baff;
+  --main-color-yellow: #fff1ba;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-container {
+  background-color: var(--main-color-blue);
+}
+
+.main-header {
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-height: 300px;
+  background-color: var(--main-color);
+}
+
+.title {
+  margin: 0;
+  font-family: "Rubik Glitch";
+  font-weight: 100;
+  text-align: center;
+  word-break: break-all;
+}
+
+.text {
+  text-align: center;
+}
+
+.footer {
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-height: 300px;
+  background-color: var(--main-color-yellow);
+}
+
+.text-cc {
+  text-align: center;
+}
