@@ -24,7 +24,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  max-height: 300px;
+  min-height: 120px;
   background-color: var(--main-color);
 }
 
@@ -46,10 +46,11 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  max-height: 300px;
+  min-height: 120px;
   background-color: var(--main-color-yellow);
 }
 
 .text-cc {
+  margin: 0;
   text-align: center;
 }
