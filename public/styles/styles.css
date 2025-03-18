@@ -28,16 +28,18 @@ body {
   background-color: var(--main-color);
 }
 
-.title {
+.main-header__title {
   margin: 0;
   font-family: "Rubik Glitch";
   font-weight: 100;
   text-align: center;
   word-break: break-all;
+  font-size: 2.5rem;
 }
 
-.text {
+.main-header__text {
   text-align: center;
+  font-size: 1.25rem;
 }
 
 .footer {
