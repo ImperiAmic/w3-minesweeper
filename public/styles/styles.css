@@ -22,7 +22,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.main-container {
+.root {
   background-color: var(--main-color-blue);
 }
 
@@ -50,7 +50,7 @@ a:hover {
   font-size: 1.25rem;
 }
 
-.footer {
+.main-footer {
   padding: 10px 14px;
   display: flex;
   flex-direction: column;
@@ -61,12 +61,12 @@ a:hover {
   font-size: 0.75rem;
 }
 
-.footer__text-cc {
+.main-footer__text-cc {
   margin: 0;
   text-align: center;
 }
 
-.footer__year {
+.main-footer__year {
   font-family: "Rubik Glitch";
   font-weight: 100;
 }
