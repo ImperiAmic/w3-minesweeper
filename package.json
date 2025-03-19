@@ -8,9 +8,7 @@
     "build:dev": "tsc --watch",
     "test": "jest",
     "test:dev": "jest --watchAll",
-    "prepare": "husky",
-    "singlefile": "node public/js/board/getRow.js",
-    "singlefile:dev": "node --watch public/js/board/getRow.js"
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
