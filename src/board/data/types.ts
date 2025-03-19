@@ -4,4 +4,6 @@ export type Cell = {
   isOpen: boolean;
 };
 
-export type Board = Cell[][];
+export type Row = Cell[];
+
+export type Board = Row[];
