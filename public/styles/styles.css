@@ -1,8 +1,7 @@
 :root {
-  --main-color: #ffcfba;
-  --main-color-blue: #baf0ff;
-  --main-color-pink: #e5baff;
-  --main-color-yellow: #fff1ba;
+  --color-header: #ffcfba;
+  --color-background: #baf0ff;
+  --color-footer: #fff1ba;
 }
 
 * {
@@ -16,14 +15,16 @@ body {
 
 a {
   text-decoration: none;
-}
+  transition: background-color 0.5s;
 
-a:hover {
-  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+    background-color: var(--color-background);
+  }
 }
 
 .root {
-  background-color: var(--main-color-blue);
+  background-color: var(--color-background);
 }
 
 .main-header {
@@ -33,15 +34,14 @@ a:hover {
   justify-content: space-around;
   align-items: center;
   min-height: 120px;
-  background-color: var(--main-color);
+  background-color: var(--color-header);
 }
 
 .main-header__title {
   margin: 0;
-  font-family: "Rubik Glitch";
+  font-family: "Rubik Glitch", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 100;
   text-align: center;
-  word-break: break-all;
   font-size: 2.5rem;
 }
 
@@ -57,7 +57,7 @@ a:hover {
   justify-content: space-around;
   align-items: center;
   min-height: 120px;
-  background-color: var(--main-color-yellow);
+  background-color: var(--color-footer);
   font-size: 0.75rem;
 }
 
@@ -67,6 +67,6 @@ a:hover {
 }
 
 .main-footer__year {
-  font-family: "Rubik Glitch";
+  font-family: "Rubik Glitch", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 100;
 }
