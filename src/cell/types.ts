@@ -3,7 +3,3 @@ export type Cell = {
   adjacentMinesTotal: number;
   isOpen: boolean;
 };
-
-export type Row = Cell[];
-
-export type Board = Row[];
