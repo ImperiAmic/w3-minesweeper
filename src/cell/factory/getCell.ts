@@ -1,4 +1,4 @@
-import { Cell } from "../types";
+import { Cell } from "../types.js";
 
 const getCell = (mineRandomness = 15): Cell => {
   const randomness = Math.random() * 100;
