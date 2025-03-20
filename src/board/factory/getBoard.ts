@@ -16,5 +16,3 @@ export const getBoard = (boardDimension: number): Board => {
 
   return board;
 };
-
-getBoard(6);
