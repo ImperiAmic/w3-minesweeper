@@ -1,5 +1,5 @@
-import { Board } from "./data/types";
-import { getRow } from "./getRow";
+import { Board } from "../types";
+import { getRow } from "../../row/factory/getRow";
 
 export const getBoard = (boardDimension: number): Board => {
   const boardDimensionInteger = Math.round(boardDimension);
