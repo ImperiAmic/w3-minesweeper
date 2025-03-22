@@ -29,12 +29,21 @@ ul {
   margin: 0;
 }
 
+button {
+  width: 3.75rem;
+  height: 3.75rem;
+}
+
 .root {
   background-color: var(--color-background);
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.hidden {
+  display: none;
 }
 
 .container {
