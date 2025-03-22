@@ -10,10 +10,14 @@ export const getRow = (cellsNumber: number): Row => {
     throw new Error("Columns minimum number must be 3");
   }
 
-  for (let column = 0; column < cellsNumberInteger; column++) {
+  for (
+    let columnPosition = 0;
+    columnPosition < cellsNumberInteger;
+    columnPosition++
+  ) {
     const cell = getCell();
-    cell.columnPosition = column;
-    row[column] = cell;
+    cell.columnPosition = columnPosition;
+    row[columnPosition] = cell;
   }
 
   return row;
