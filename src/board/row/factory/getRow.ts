@@ -11,7 +11,9 @@ export const getRow = (cellsNumber: number): Row => {
   }
 
   for (let column = 0; column < cellsNumberInteger; column++) {
-    row[column] = getCell();
+    const cell = getCell();
+    cell.columnPosition = column;
+    row[column] = cell;
   }
 
   return row;
