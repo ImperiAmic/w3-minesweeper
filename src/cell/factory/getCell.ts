@@ -1,17 +1,23 @@
 import { Cell } from "../types.js";
 
 const getCell = (mineRandomness = 15): Cell => {
-  const randomness = Math.random() * 100;
+  const randomnessFactor = Math.random() * 100;
+
+  if (randomnessFactor < mineRandomness) {
+    const cell: Cell = {
+      hasMine: true,
+      isOpen: false,
+      adjacentMinesTotal: 0,
+    };
+
+    return cell;
+  }
 
   const cell: Cell = {
     hasMine: false,
     isOpen: false,
     adjacentMinesTotal: 0,
   };
-
-  if (randomness < mineRandomness) {
-    cell.hasMine = true;
-  }
 
   return cell;
 };
