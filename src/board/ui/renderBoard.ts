@@ -14,6 +14,7 @@ export const renderBoard = (board: Board): void => {
     row.forEach((cell) => {
       const cellElement = document.createElement("button");
       cellElement.className = "cell";
+      cellElement.ariaLabel = "cell";
 
       const cellItemElement = document.createElement("li");
       cellItemElement.className = "cell-item";
