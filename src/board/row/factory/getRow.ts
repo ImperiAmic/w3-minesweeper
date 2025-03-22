@@ -1,5 +1,5 @@
+import getCell from "../../../cell/factory/getCell.js";
 import { Row } from "../types.js";
-import getCell from "../../cell/factory/getCell.js";
 
 export const getRow = (cellsNumber: number): Row => {
   const cellsNumberInteger = Math.round(cellsNumber);
