@@ -33,6 +33,7 @@ ul {
 button {
   width: 2.625rem;
   height: 2.625rem;
+  cursor: pointer;
 }
 
 .root {
