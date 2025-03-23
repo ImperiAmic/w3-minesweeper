@@ -14,7 +14,7 @@ export const renderBoard = (board: Board): void => {
 
   flattenedBoard.forEach((cell) => {
     const cellElement = document.createElement("button");
-    cellElement.className = "cell";
+    cellElement.className = "cell-button";
     cellElement.ariaLabel = "Cell";
 
     const cellItemElement = document.createElement("li");
@@ -30,7 +30,7 @@ export const renderBoard = (board: Board): void => {
       mineImageElement.width = 40;
       mineImageElement.height = 40;
       cellElement.appendChild(mineImageElement);
-      cellElement.classList.add("button-mine");
+      cellElement.classList.add("mine-button");
 
       cellElement.addEventListener("click", () => {
         mineImageElement.classList.remove("hidden");

@@ -1,7 +1,8 @@
 :root {
-  --color-header: #ffcfba;
+  --color-main: #ffcfba;
   --color-background: #baf0ff;
-  --color-footer: #fff1ba;
+  --color-secundary: #e5baff;
+  --color-terciary: #fff1ba;
   --board-dimension: 6;
 }
 
@@ -46,9 +47,20 @@ button {
   display: none;
 }
 
+.game-over {
+  position: absolute;
+  background-color: var(--color-secundary);
+  top: 90px;
+  padding: 24px;
+  text-transform: uppercase;
+  overflow: auto;
+  width: 150px;
+}
+
 .container {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .board {
@@ -58,7 +70,7 @@ button {
   gap: 2px;
 }
 
-.cell {
+.cell-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +83,7 @@ button {
   justify-content: space-around;
   align-items: center;
   min-height: 120px;
-  background-color: var(--color-header);
+  background-color: var(--color-main);
 }
 
 .main-header__title {
@@ -94,7 +106,7 @@ button {
   justify-content: space-around;
   align-items: center;
   min-height: 120px;
-  background-color: var(--color-footer);
+  background-color: var(--color-terciary);
   font-size: 0.75rem;
 }
 
