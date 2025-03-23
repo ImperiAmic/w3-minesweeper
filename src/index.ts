@@ -4,6 +4,6 @@ import { renderGameOver } from "./board/ui/renderGameOver.js";
 import { renderBoard } from "./board/ui/renderBoard.js";
 
 const board = getBoard(6);
-
-renderBoard(setAdjacentMinesTotal(board));
+const adjacentMinesTotalBoard = setAdjacentMinesTotal(board);
+renderBoard(adjacentMinesTotalBoard);
 renderGameOver();

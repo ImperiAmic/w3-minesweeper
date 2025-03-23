@@ -5,7 +5,7 @@ export const renderGameOver = (): void => {
   const mineImageElements = document.querySelectorAll(".image-mine");
 
   if (!containerElement) {
-    throw new Error("test");
+    throw new Error("Missing element container");
   }
 
   const gameOverElement = document.createElement("div");
