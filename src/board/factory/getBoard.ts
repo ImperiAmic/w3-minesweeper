@@ -10,9 +10,18 @@ export const getBoard = (boardDimension: number): Board => {
     throw new Error("Board minimum dimension must be 3");
   }
 
-  for (let row = 0; row < boardDimensionInteger; row++) {
-    board[row] = getRow(boardDimensionInteger);
-  }
+  for (
+    let rowPosition = 0;
+    rowPosition < boardDimensionInteger;
+    rowPosition++
+  ) {
+    const row = getRow(boardDimensionInteger);
 
+    row.forEach((cell) => {
+      cell.rowPosition = rowPosition;
+    });
+
+    board[rowPosition] = row;
+  }
   return board;
 };

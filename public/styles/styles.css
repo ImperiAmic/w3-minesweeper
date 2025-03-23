@@ -58,6 +58,12 @@ button {
   gap: 2px;
 }
 
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .main-header {
   padding: 10px 14px;
   display: flex;

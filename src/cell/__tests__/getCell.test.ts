@@ -8,6 +8,8 @@ describe("Given the function getCell", () => {
         hasMine: true,
         isOpen: false,
         adjacentMinesTotal: 0,
+        rowPosition: 0,
+        columnPosition: 0,
       };
 
       const actualCell = getCell(100);
@@ -22,6 +24,8 @@ describe("Given the function getCell", () => {
         hasMine: false,
         isOpen: false,
         adjacentMinesTotal: 0,
+        rowPosition: 0,
+        columnPosition: 0,
       };
 
       const actualCell = getCell(0);
