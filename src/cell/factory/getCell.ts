@@ -8,6 +8,8 @@ const getCell = (mineRandomness = 15): Cell => {
       hasMine: true,
       isOpen: false,
       adjacentMinesTotal: 0,
+      rowPosition: 0,
+      columnPosition: 0,
     };
 
     return cell;
@@ -17,6 +19,8 @@ const getCell = (mineRandomness = 15): Cell => {
     hasMine: false,
     isOpen: false,
     adjacentMinesTotal: 0,
+    rowPosition: 0,
+    columnPosition: 0,
   };
 
   return cell;
