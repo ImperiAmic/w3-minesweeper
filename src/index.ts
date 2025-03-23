@@ -1,5 +1,9 @@
 import { setAdjacentMinesTotal } from "./board/adjacent-mines/setAdjacentMinesTotal.js";
 import { getBoard } from "./board/factory/getBoard.js";
+import { renderGameOver } from "./board/ui/renderGameOver.js";
 import { renderBoard } from "./board/ui/renderBoard.js";
 
-renderBoard(setAdjacentMinesTotal(getBoard(6)));
+const board = getBoard(6);
+
+renderBoard(setAdjacentMinesTotal(board));
+renderGameOver();
