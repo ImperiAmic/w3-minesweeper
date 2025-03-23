@@ -29,6 +29,10 @@ export const renderBoard = (board: Board): void => {
         mineImageElement.width = 40;
         mineImageElement.height = 40;
         cellElement.appendChild(mineImageElement);
+
+        cellElement.addEventListener("click", () => {
+          mineImageElement.classList.remove("hidden");
+        });
       }
 
       if (!cell.hasMine) {
@@ -36,6 +40,10 @@ export const renderBoard = (board: Board): void => {
         adjacentMinesTotalElement.textContent = String(cell.adjacentMinesTotal);
         adjacentMinesTotalElement.className = "hidden";
         cellElement.appendChild(adjacentMinesTotalElement);
+
+        cellElement.addEventListener("click", () => {
+          adjacentMinesTotalElement.classList.remove("hidden");
+        });
       }
     });
   });
