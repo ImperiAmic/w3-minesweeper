@@ -30,6 +30,13 @@ export const renderBoard = (board: Board): void => {
         mineImageElement.height = 40;
         cellElement.appendChild(mineImageElement);
       }
+
+      if (!cell.hasMine) {
+        const adjacentMinesTotalElement = document.createElement("span");
+        adjacentMinesTotalElement.textContent = String(cell.adjacentMinesTotal);
+        adjacentMinesTotalElement.className = "hidden";
+        cellElement.appendChild(adjacentMinesTotalElement);
+      }
     });
   });
 
