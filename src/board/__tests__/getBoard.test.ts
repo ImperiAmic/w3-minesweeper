@@ -11,7 +11,7 @@ describe("Given the function getBoard", () => {
     });
   });
 
-  describe("hen it receives 4 as number of rows", () => {
+  describe("When it receives 4 as number of rows", () => {
     test("Then it should return a board of 4 rows with 4 cells each row", () => {
       const boardDimension = 4;
 
@@ -21,7 +21,7 @@ describe("Given the function getBoard", () => {
     });
   });
 
-  describe("hen it receives 5.9 as number of rows", () => {
+  describe("When it receives 5.9 as number of rows", () => {
     test("Then it should return a board of 6 rows with 6 cells each row", () => {
       const boardDimension = 5.9;
       const expectedBoardDimension = 6;
@@ -32,7 +32,7 @@ describe("Given the function getBoard", () => {
     });
   });
 
-  describe("hen it receives 6.1 as number of rows", () => {
+  describe("When it receives 6.1 as number of rows", () => {
     test("Then it should return a board of 6 rows with 6 cells each row", () => {
       const boardDimension = 6.1;
       const expectedBoardDimension = 6;

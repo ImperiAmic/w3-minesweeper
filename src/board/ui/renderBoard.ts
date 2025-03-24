@@ -7,12 +7,12 @@ export const renderBoard = (board: Board): void => {
     throw new Error("Missing container element");
   }
 
-  const flattenedBoard = board.flat();
+  const cells = board.flat();
 
   const boardElement = document.createElement("ul");
   boardElement.className = "board";
 
-  flattenedBoard.forEach((cell) => {
+  cells.forEach((cell) => {
     const cellElement = document.createElement("button");
     cellElement.className = "cell-button";
     cellElement.ariaLabel = "Cell";
@@ -47,6 +47,12 @@ export const renderBoard = (board: Board): void => {
       cellElement.addEventListener("click", () => {
         adjacentMinesTotalElement.classList.remove("hidden");
         cell.isOpen = true;
+      });
+
+      cells.every((cell) => {
+        if (cell.isOpen) {
+          console.log("a");
+        }
       });
     }
   });
